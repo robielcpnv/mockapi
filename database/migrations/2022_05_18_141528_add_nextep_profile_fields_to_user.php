@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('lastname');
             $table->string('picture');
             $table->string('wallet_address')->nullable();
-            $table->boolean('2FA')->default(false);
+            $table->boolean('two_factor_auth')->default(false);
             $table->string('description')->nullable();
         });
     }
